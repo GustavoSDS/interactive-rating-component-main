@@ -25,10 +25,10 @@ body {
 .thankyou-state {
     background-color: var(--Dark-Blue);
     width: 327px;
-    height: 364px;
+    height: 360px;
     border-radius: 16px;
-    margin: 195px auto 80px;
-    padding: 24px;
+    margin: 155px auto 80px;
+    padding: 25px;
 }
 
 .rating-state__icon-container,
@@ -40,26 +40,31 @@ body {
     border-radius: 50%;
     display: grid;
     place-content: center;
-    margin-bottom: 22px;
+    margin-bottom: 23px;
     border: none;
 }
 
 .rating-state__title,
 .thankyou-state__title {
     color: var(--White);
-    margin-bottom: 22px;
+    margin-bottom: 23px;
     font-size: 1.6em;
     font-weight: 400;
+    margin-left: 4px;
 }
 
 .rating-state__description,
 .thankyou-state__paragraph {
+    height: 60px;
     color: var(--Light-Grey);
     margin-bottom: 30px;
+    margin-left: 4px;
     letter-spacing: -0.5px;
 }
 
 .rating-state__number-container {
+    width: 341px;
+    margin: auto;
     display: flex;
     justify-content: space-between;
 }
@@ -76,8 +81,10 @@ body {
 }
 
 .rating-state__button {
-    width: 100%;
+    width: 280px;
     height: 44px;
+    display: block;
+    margin: auto;
     border: none;
     border-radius: 50px;
     color: var(--White);
@@ -136,30 +143,58 @@ body {
 
 @media (min-width:600px) {
 
-    .rating-state,
-    .thankyou-state {
-        width: 412px;
-        height: 412px;
-        padding: 34px;
+    .contianer{
+        max-width: 1440px;
+        max-height: 800px;
+        margin: auto;
     }
 
+    .rating-state,
+    .thankyou-state {
+        margin: 195px auto;
+        width: 410px;
+        height: 415px;
+        border-radius: 32px;
+        padding: 30px 30px 35px 30px;
+    }
+
+    .rating-state__icon-container{
+        margin-top: 4px;
+        margin-bottom: 31px;
+    }
     .rating-state__icon-container,
     .rating-state__number-container__number {
         width: 50px;
         height: 50px;
     }
 
-    .rating-state__title, .thankyou-state__title{
+    .rating-state__title{
+        margin-bottom: 11px;
+    }
+    .rating-state__title,
+    .thankyou-state__title {
         font-size: 1.9em;
     }
 
+    .rating-state__description{
+        margin-bottom: 35px;
+    }
     .rating-state__description,
     .thankyou-state__paragraph {
+        line-height: 25px;
         font-size: 1.07em;
     }
 
-    .thankyou-state__result{
+    .rating-state__number-container{
+        margin-bottom: 10px;
+    }
+
+    .rating-state__button{
+        width: 341px;
+    }
+    .thankyou-state__result {
         font-size: 1em;
         width: 196px;
     }
+
 }
